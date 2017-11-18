@@ -1,0 +1,22 @@
+{
+  "name": "habboflashclient-typescript",
+  "version": "1.0.0",
+  "description": "habboflashclient-typescript",
+  "main": "index.js",
+  "repository": "git@github.com:pbrln/habboflashclient-typescript.git",
+  "author": "pbrln",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && browserify bin/index.js -t [ babelify --presets [ es2015 ] ] -o dist/flashexternalinterface.js && node minify.js"
+  },
+  "dependencies": {
+    "browserify": "^14.5.0",
+    "node-minify": "^2.4.1",
+    "swfobject": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0"
+  }
+}
